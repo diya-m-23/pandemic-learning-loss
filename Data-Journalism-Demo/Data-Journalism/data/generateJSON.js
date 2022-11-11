@@ -1,29 +1,26 @@
 const fs = require('fs');
 
-let characters = {};
+let states = {};
 
-let peeps_csv = fs.readFileSync('Characters.csv', 'utf8');
+let scores_csv = fs.readFileSync('scores.csv', 'utf8');
 
-let peeps = peeps_csv.split("\n");
+let scores = scores_csv.split("\n");
 
-peeps.forEach(function(peep) {
-  let character_info = peep.split(';');
+scores.forEach(function(score) {
+  let state_info = score.split(',');
 
-  let character_name = character_info[1];
+  if(state_info[0]!=''){
+    let state_name = state_info[0];
 
-  if(character_name!="Name"){
-    let characterStats = {};
-    characterStats['gender'] = character_info[2];
-    characterStats['house'] = character_info[4];
-    characterStats['species'] = character_info[7];
-    if (character_info[12])
-      characterStats['skills'] = character_info[12].split('|');
-    else {
-      characterStats['skills'] = [];
+    if(state_name!="Jurisdiction"){
+      let stateStats = {};
+
+      stateStats['2019'] = state_info[1];
+      stateStats['2022'] = state_info[2];
+
+      states[state_name]=stateStats;
     }
-
-    characters[character_name]=characterStats;
   }
 });
 
-fs.writeFileSync('potter.json', JSON.stringify(characters), 'utf8');
+fs.writeFileSync('scores.json', JSON.stringify(states), 'utf8');
