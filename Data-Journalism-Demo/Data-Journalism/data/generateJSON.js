@@ -15,9 +15,9 @@ scores.forEach(function(score) {
     if(state_name!="Jurisdiction"){
       let stateStats = {};
 
-      stateStats['2019'] = state_info[1];
-      stateStats['2022'] = state_info[2];
-      stateStats['percent-change'] = (((state_info[2]-state_info[1])/(state_info[1])*100).toFixed(2)).toString();
+      stateStats['before'] = state_info[1];
+      stateStats['after'] = state_info[2];
+      stateStats['percent'] = (((state_info[2]-state_info[1])/(state_info[1])*100).toFixed(2)).toString();
 
       states[state_name]=stateStats;
     }

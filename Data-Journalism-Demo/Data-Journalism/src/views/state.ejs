@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title><%=name%></title>
+  <meta name="author" content="You">
+  <meta name="description" content="A compendium of average math scores across the nation">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1><%=name%></h1>
+  </header>
+  <section id="state-stats">
+  <h2>Stats</h2>
+  <ul>
+    <li>Jurisdiction: <%=stats.jurisdiction%></li>
+    <li>2019: <%=stats.before%></li>
+    <li>2022: <%=stats.after%></li>
+    <li>Percent change: <%=stats.percent%></li>
+  </ul>
+  </section>
+
+  <%- include ('global/footer');  %>
+
+</body>
+
+</html>
