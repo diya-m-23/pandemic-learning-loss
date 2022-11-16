@@ -1,1 +1,272 @@
-{"National":{"2019":"282","2022":"274","percent-change":"-2.84"},"Alabama":{"2019":"269","2022":"264","percent-change":"-1.86"},"Alaska":{"2019":"274","2022":"270","percent-change":"-1.46"},"Arizona":{"2019":"280","2022":"271","percent-change":"-3.21"},"Arkansas":{"2019":"274","2022":"267","percent-change":"-2.55"},"California":{"2019":"276","2022":"270","percent-change":"-2.17"},"Colorado":{"2019":"285","2022":"275","percent-change":"-3.51"},"Connecticut":{"2019":"286","2022":"276","percent-change":"-3.50"},"Delaware":{"2019":"277","2022":"264","percent-change":"-4.69"},"District of Columbia":{"2019":"269","2022":"260","percent-change":"-3.35"},"DoDEA":{"2019":"292","2022":"292","percent-change":"0.00"},"Florida":{"2019":"279","2022":"271","percent-change":"-2.87"},"Georgia":{"2019":"279","2022":"271","percent-change":"-2.87"},"Hawaii":{"2019":"275","2022":"270","percent-change":"-1.82"},"Idaho":{"2019":"286","2022":"282","percent-change":"-1.40"},"Illinois":{"2019":"283","2022":"275","percent-change":"-2.83"},"Indiana":{"2019":"286","2022":"279","percent-change":"-2.45"},"Iowa":{"2019":"282","2022":"277","percent-change":"-1.77"},"Kansas":{"2019":"282","2022":"272","percent-change":"-3.55"},"Kentucky":{"2019":"278","2022":"269","percent-change":"-3.24"},"Louisiana":{"2019":"272","2022":"266","percent-change":"-2.21"},"Maine":{"2019":"282","2022":"273","percent-change":"-3.19"},"Maryland":{"2019":"280","2022":"269","percent-change":"-3.93"},"Massachusetts":{"2019":"294","2022":"284","percent-change":"-3.40"},"Michigan":{"2019":"280","2022":"273","percent-change":"-2.50"},"Minnesota":{"2019":"291","2022":"280","percent-change":"-3.78"},"Mississippi":{"2019":"274","2022":"266","percent-change":"-2.92"},"Missouri":{"2019":"281","2022":"272","percent-change":"-3.20"},"Montana":{"2019":"284","2022":"277","percent-change":"-2.46"},"Nebraska":{"2019":"285","2022":"279","percent-change":"-2.11"},"Nevada":{"2019":"274","2022":"269","percent-change":"-1.82"},"New Hampshire":{"2019":"287","2022":"279","percent-change":"-2.79"},"New Jersey":{"2019":"292","2022":"281","percent-change":"-3.77"},"New Mexico":{"2019":"269","2022":"259","percent-change":"-3.72"},"New York":{"2019":"280","2022":"274","percent-change":"-2.14"},"North Carolina":{"2019":"284","2022":"274","percent-change":"-3.52"},"North Dakota":{"2019":"286","2022":"278","percent-change":"-2.80"},"Ohio":{"2019":"286","2022":"276","percent-change":"-3.50"},"Oklahoma":{"2019":"276","2022":"264","percent-change":"-4.35"},"Oregon":{"2019":"280","2022":"270","percent-change":"-3.57"},"Pennsylvania":{"2019":"285","2022":"274","percent-change":"-3.86"},"Puerto Rico":{"2019":"222","2022":"216","percent-change":"-2.70"},"Rhode Island":{"2019":"276","2022":"270","percent-change":"-2.17"},"South Carolina":{"2019":"276","2022":"269","percent-change":"-2.54"},"South Dakota":{"2019":"287","2022":"281","percent-change":"-2.09"},"Tennessee":{"2019":"280","2022":"272","percent-change":"-2.86"},"Texas":{"2019":"280","2022":"273","percent-change":"-2.50"},"Utah":{"2019":"285","2022":"282","percent-change":"-1.05"},"Vermont":{"2019":"287","2022":"276","percent-change":"-3.83"},"Virginia":{"2019":"287","2022":"279","percent-change":"-2.79"},"Washington":{"2019":"286","2022":"276","percent-change":"-3.50"},"West Virginia":{"2019":"272","2022":"260","percent-change":"-4.41"},"Wisconsin":{"2019":"289","2022":"281","percent-change":"-2.77"},"Wyoming":{"2019":"286","2022":"281","percent-change":"-1.75"}}
+{
+  "National": {
+    "2019": "282",
+    "2022": "274",
+    "percent-change": "-2.84"
+  },
+  "Alabama": {
+    "2019": "269",
+    "2022": "264",
+    "percent-change": "-1.86"
+  },
+  "Alaska": {
+    "2019": "274",
+    "2022": "270",
+    "percent-change": "-1.46"
+  },
+  "Arizona": {
+    "2019": "280",
+    "2022": "271",
+    "percent-change": "-3.21"
+  },
+  "Arkansas": {
+    "2019": "274",
+    "2022": "267",
+    "percent-change": "-2.55"
+  },
+  "California": {
+    "2019": "276",
+    "2022": "270",
+    "percent-change": "-2.17"
+  },
+  "Colorado": {
+    "2019": "285",
+    "2022": "275",
+    "percent-change": "-3.51"
+  },
+  "Connecticut": {
+    "2019": "286",
+    "2022": "276",
+    "percent-change": "-3.50"
+  },
+  "Delaware": {
+    "2019": "277",
+    "2022": "264",
+    "percent-change": "-4.69"
+  },
+  "District of Columbia": {
+    "2019": "269",
+    "2022": "260",
+    "percent-change": "-3.35"
+  },
+  "DoDEA": {
+    "2019": "292",
+    "2022": "292",
+    "percent-change": "0.00"
+  },
+  "Florida": {
+    "2019": "279",
+    "2022": "271",
+    "percent-change": "-2.87"
+  },
+  "Georgia": {
+    "2019": "279",
+    "2022": "271",
+    "percent-change": "-2.87"
+  },
+  "Hawaii": {
+    "2019": "275",
+    "2022": "270",
+    "percent-change": "-1.82"
+  },
+  "Idaho": {
+    "2019": "286",
+    "2022": "282",
+    "percent-change": "-1.40"
+  },
+  "Illinois": {
+    "2019": "283",
+    "2022": "275",
+    "percent-change": "-2.83"
+  },
+  "Indiana": {
+    "2019": "286",
+    "2022": "279",
+    "percent-change": "-2.45"
+  },
+  "Iowa": {
+    "2019": "282",
+    "2022": "277",
+    "percent-change": "-1.77"
+  },
+  "Kansas": {
+    "2019": "282",
+    "2022": "272",
+    "percent-change": "-3.55"
+  },
+  "Kentucky": {
+    "2019": "278",
+    "2022": "269",
+    "percent-change": "-3.24"
+  },
+  "Louisiana": {
+    "2019": "272",
+    "2022": "266",
+    "percent-change": "-2.21"
+  },
+  "Maine": {
+    "2019": "282",
+    "2022": "273",
+    "percent-change": "-3.19"
+  },
+  "Maryland": {
+    "2019": "280",
+    "2022": "269",
+    "percent-change": "-3.93"
+  },
+  "Massachusetts": {
+    "2019": "294",
+    "2022": "284",
+    "percent-change": "-3.40"
+  },
+  "Michigan": {
+    "2019": "280",
+    "2022": "273",
+    "percent-change": "-2.50"
+  },
+  "Minnesota": {
+    "2019": "291",
+    "2022": "280",
+    "percent-change": "-3.78"
+  },
+  "Mississippi": {
+    "2019": "274",
+    "2022": "266",
+    "percent-change": "-2.92"
+  },
+  "Missouri": {
+    "2019": "281",
+    "2022": "272",
+    "percent-change": "-3.20"
+  },
+  "Montana": {
+    "2019": "284",
+    "2022": "277",
+    "percent-change": "-2.46"
+  },
+  "Nebraska": {
+    "2019": "285",
+    "2022": "279",
+    "percent-change": "-2.11"
+  },
+  "Nevada": {
+    "2019": "274",
+    "2022": "269",
+    "percent-change": "-1.82"
+  },
+  "New Hampshire": {
+    "2019": "287",
+    "2022": "279",
+    "percent-change": "-2.79"
+  },
+  "New Jersey": {
+    "2019": "292",
+    "2022": "281",
+    "percent-change": "-3.77"
+  },
+  "New Mexico": {
+    "2019": "269",
+    "2022": "259",
+    "percent-change": "-3.72"
+  },
+  "New York": {
+    "2019": "280",
+    "2022": "274",
+    "percent-change": "-2.14"
+  },
+  "North Carolina": {
+    "2019": "284",
+    "2022": "274",
+    "percent-change": "-3.52"
+  },
+  "North Dakota": {
+    "2019": "286",
+    "2022": "278",
+    "percent-change": "-2.80"
+  },
+  "Ohio": {
+    "2019": "286",
+    "2022": "276",
+    "percent-change": "-3.50"
+  },
+  "Oklahoma": {
+    "2019": "276",
+    "2022": "264",
+    "percent-change": "-4.35"
+  },
+  "Oregon": {
+    "2019": "280",
+    "2022": "270",
+    "percent-change": "-3.57"
+  },
+  "Pennsylvania": {
+    "2019": "285",
+    "2022": "274",
+    "percent-change": "-3.86"
+  },
+  "Puerto Rico": {
+    "2019": "222",
+    "2022": "216",
+    "percent-change": "-2.70"
+  },
+  "Rhode Island": {
+    "2019": "276",
+    "2022": "270",
+    "percent-change": "-2.17"
+  },
+  "South Carolina": {
+    "2019": "276",
+    "2022": "269",
+    "percent-change": "-2.54"
+  },
+  "South Dakota": {
+    "2019": "287",
+    "2022": "281",
+    "percent-change": "-2.09"
+  },
+  "Tennessee": {
+    "2019": "280",
+    "2022": "272",
+    "percent-change": "-2.86"
+  },
+  "Texas": {
+    "2019": "280",
+    "2022": "273",
+    "percent-change": "-2.50"
+  },
+  "Utah": {
+    "2019": "285",
+    "2022": "282",
+    "percent-change": "-1.05"
+  },
+  "Vermont": {
+    "2019": "287",
+    "2022": "276",
+    "percent-change": "-3.83"
+  },
+  "Virginia": {
+    "2019": "287",
+    "2022": "279",
+    "percent-change": "-2.79"
+  },
+  "Washington": {
+    "2019": "286",
+    "2022": "276",
+    "percent-change": "-3.50"
+  },
+  "West Virginia": {
+    "2019": "272",
+    "2022": "260",
+    "percent-change": "-4.41"
+  },
+  "Wisconsin": {
+    "2019": "289",
+    "2022": "281",
+    "percent-change": "-2.77"
+  },
+  "Wyoming": {
+    "2019": "286",
+    "2022": "281",
+    "percent-change": "-1.75"
+  }
+}
