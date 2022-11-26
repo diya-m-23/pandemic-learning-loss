@@ -3,6 +3,7 @@ const ejs = require('ejs');
 
 let state_info = JSON.parse(fs.readFileSync('../data/scores.json', 'utf8'));
 let index_template = fs.readFileSync('views/index.ejs', 'utf8');
+let about_template = fs.readFileSync('views/about.ejs', 'utf8');
 let state_template = fs.readFileSync('views/state.ejs', 'utf8');
 
 /*
@@ -29,6 +30,13 @@ let index_html = ejs.render(index_template, {
 });
 
 fs.writeFileSync('../public/index.html', index_html, 'utf8');
+
+let about_html = ejs.render(about_template, {
+  filename: __dirname + '/views/about.ejs',
+  data: state_info
+});
+
+fs.writeFileSync('../public/about.html', about_html, 'utf8');
 
 function getBetterFileName(stateName){
   let betterFileName = stateName.split(" ").join("_");
