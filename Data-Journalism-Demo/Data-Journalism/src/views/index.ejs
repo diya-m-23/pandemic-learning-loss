@@ -1,41 +1,53 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pandemic learning loss by state</title>
+    <meta name="author" content="You">
+    <meta name="description" content="A compendium of average math scores across the nation">
+    <meta content="text/html" http-equiv="Content-type" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <%- include ('global/navbar');  %>
+    <%- include ('global/header');  %>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Pandemic learning loss by state</title>
-  <meta name="author" content="You">
-  <meta name="description" content="A compendium of average math scores across the nation">
-  <meta content="text/html" http-equiv="Content-type" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <header>
+      <h1>Average scores</h1>
+    </header>
+    <section id="scores-table">
+      <table>
+        <tr>
+          <th>Jurisdiction</th>
+          <th>2019</th>
+          <th>2022</th>
+          <th>Percent change</th>
+        </tr>
+        <% for(state in data){ %>
+        <tr>
+          <td><a href="<%=data[state].link%>.html"><%= state %></a></td>
+          <td><%= data[state].before %></td>
+          <td><%= data[state].after %></td>
+          <td><%= data[state].percent %></td>
+        </tr>
+        <%}%>
+      </table>
+    </section>
 
-<body>
-  <header>
-    <h1>Average scores</h1>
-  </header>
-  <section id="scores-table">
-    <table>
-      <tr>
-        <th>Jurisdiction</th>
-        <th>2019</th>
-        <th>2022</th>
-        <th>Percent change</th>
-      </tr>
-      <% for(state in data){ %>
-      <tr>
-        <td><a href="<%=data[state].link%>.html"><%= state %></a></td>
-        <td><%= data[state].before %></td>
-        <td><%= data[state].after %></td>
-        <td><%= data[state].percent %></td>
-      </tr>
-      <%}%>
-    </table>
-  </section>
+    <br><h2>MACRO-SUMMARY</h2>
+    <p><h4>PROJECT DESCRIPTION</h4>Our project aims to display pandemic learning loss visually on both a national and a state level. Our data compares
+      the average math scores of 8th graders in 2019 versus 2022, and we have found that the average scores have declined in almost
+      every single state. We hope to demonstrate insight into how the pandemic has affected learning for different demographics.
+    </p>
+   <p><h4>INSERT INFOGRAPHIC</h4></p>
+   <p>At least three bullet points listing interesting, text-based perspectives gleaned from the data that expand upon what is visible in the infographic
+     + a mention of at least 2 potentially problematic perspectives with your visualization</p>
 
-  <%- include ('global/footer');  %>
+    <%- include ('global/footer');  %>
 
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
