@@ -10,14 +10,26 @@ let state_template = fs.readFileSync('views/state.ejs', 'utf8');
   1) Generate a web page for each state
   2) Keep track of the link for index.html
 */
-for (state in state_info){
+
+let keys = Object.keys(state_info);
+
+for (index in keys){
+
+  let state = keys[index];
+
   let state_html = ejs.render(state_template, {
     filename: __dirname + '/views/state.ejs',
-    stats: state_info[state],
-    name: state
+    data: state_info,
+    state: state
   });
-  state_info[state].link = getBetterFileName(state);
-  fs.writeFileSync('../public/'+state_info[state].link+'.html', state_html, 'utf8');
+
+  let link = getBetterFileName(state);
+
+  state_info[state].link = link;
+
+  let filename = '../public/'+ link+'.html';
+
+  fs.writeFileSync(filename, state_html, 'utf8');
 
 }
 
