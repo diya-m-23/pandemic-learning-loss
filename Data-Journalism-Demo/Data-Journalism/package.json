@@ -8,7 +8,6 @@
     "express": "^4.18.2",
     "fs": "^0.0.1-security"
   },
-  "devDependencies": {},
   "scripts": {
     "prebuild": "echo \"prebuild\" ",
     "build": "cd data && node generateJSON.js && cd .. && cd src && node siteGenerator.js",
