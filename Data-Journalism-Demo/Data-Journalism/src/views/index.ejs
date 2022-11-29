@@ -7,6 +7,9 @@
     <meta name="description" content="A compendium of average math scores across the nation">
     <meta content="text/html" http-equiv="Content-type" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Load plotly.js into the DOM -->
+	   <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+	   <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <%- include ('global/navbar');  %>
     <%- include ('global/header');  %>
@@ -16,6 +19,50 @@
     <header>
       <h1>Average scores</h1>
     </header>
+<script>
+d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv', function(err, rows){
+      function unpack(rows, key) {
+          return rows.map(function(row) { return row[key]; });
+      }
+
+
+      var data = [{
+          type: 'choropleth',
+          locationmode: 'USA-states',
+          locations: unpack(rows, 'code'),
+          z: unpack(rows, 'total exports'),
+          text: unpack(rows, 'state'),
+          zmin: 0,
+          zmax: 17000,
+          colorscale: [
+              [0, 'rgb(255,0,0)'], [0.5, 'rgb(255,255,255)'],
+              [1, 'rgb(0,255,0)']
+          ],
+          colorbar: {
+              title: '% change',
+              thickness: 5
+          },
+          marker: {
+              line:{
+                  color: 'rgb(255,255,255)',
+                  width: 2
+              }
+          }
+      }];
+
+      var layout = {
+          title: 'Percent Change in 8th Grade Math Scores by State',
+          geo:{
+              scope: 'usa',
+              showlakes: true,
+              lakecolor: 'rgb(255,255,255)'
+          }
+      };
+
+      Plotly.newPlot("myDiv", data, layout, {showLink: false});
+});</script>
+
+    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
     <section id="scores-table">
       <table>
         <tr>
