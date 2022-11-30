@@ -18,12 +18,20 @@
     <h1><%=state%></h1>
   </header>
   <section id="state-data">
-  <h2>data</h2>
+  <h3>Data</h3>
   <ul>
-    <li>2019: <%=data[state].before%></li>
-    <li>2022: <%=data[state].after%></li>
-    <li>Percent change: <%=data[state].percent%></li>
+    <li>Score in 2019: <%=data[state].before%></li>
+    <li>Score in 2022: <%=data[state].after%></li>
+    <li>Percent change: <%=data[state].percent%>%</li>
   </ul>
+  </section>
+  <section id="national-comparison">
+    <% if (data[state].percent > -2.84){ %>
+      <p>This state's percent decrease is less than the national average decrease of 2.84%. </p>
+    <%}%>
+    <% if (data[state].percent < -2.84){ %>
+      <p>This state's percent decrease is more than the national average decrease of 2.84%. </p>
+    <%}%>
   </section>
 
   <%- include ('global/footer');  %>
