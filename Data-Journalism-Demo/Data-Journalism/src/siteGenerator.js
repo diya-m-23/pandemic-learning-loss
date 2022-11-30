@@ -27,7 +27,7 @@ for (index in keys){
 
   state_info[state].link = link;
 
-  let filename = '../docs/'+ link+'.html';
+  let filename = '../public/'+ link+'.html';
 
   fs.writeFileSync(filename, state_html, 'utf8');
 
@@ -41,14 +41,14 @@ let index_html = ejs.render(index_template, {
   data: state_info
 });
 
-fs.writeFileSync('../docs/index.html', index_html, 'utf8');
+fs.writeFileSync('../public/index.html', index_html, 'utf8');
 
 let about_html = ejs.render(about_template, {
   filename: __dirname + '/views/about.ejs',
   data: state_info
 });
 
-fs.writeFileSync('../docs/about.html', about_html, 'utf8');
+fs.writeFileSync('../public/about.html', about_html, 'utf8');
 
 function getBetterFileName(stateName){
   let betterFileName = stateName.split(" ").join("_");
