@@ -11,6 +11,7 @@
 	   <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
 	   <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <%- include ('global/navbar');  %>
     <%- include ('global/header');  %>
   </head>
@@ -85,11 +86,17 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
     <br><h2>MACRO-SUMMARY</h2>
     <p><h4>PROJECT DESCRIPTION</h4>Our project aims to display pandemic learning loss visually on both a national and a state level. Our data compares
       the average math scores of 8th graders in 2019 versus 2022, and we have found that the average scores have declined in almost
-      every single state. We hope to demonstrate insight into how the pandemic has affected learning for different demographics.
-    </p>
+      every single state. We hope to demonstrate insight into how the pandemic has affected learning for different demographics. </p>
    <p><h4>INSERT INFOGRAPHIC</h4></p>
-   <p>At least three bullet points listing interesting, text-based perspectives gleaned from the data that expand upon what is visible in the infographic
-     + a mention of at least 2 potentially problematic perspectives with your visualization</p>
+   <p>At least three bullet points listing interesting, text-based perspectives gleaned from the data that expand upon what is visible in the infographic. </p>
+   <p>The first potentially problematic aspect of our visualization is that the US map is not proportional (in terms of size) for every state.
+   This is the same problem that election maps raise -- that the state sizes are unproportional, and from just looking at the map it seems like the Republican
+   candidate has won by a landslide, when in fact a lot of Democratic states are smaller in size, but hold the same weight. We could have had proportional
+   squares for each state, which are laid out like the US map so that it is still recognizable as a map, but each of the states are visually weighted equally. </p>
+   <p>The second potentially problematic aspect of our visualization is that we weren't sure what colors to use on our map. We were debating whether to use only
+   shades of red or whether to use two different colors fading into each other. In using different colors, we could make one color signify that the state's percent decrease
+   was above the national average and the other color signify that the percent change was below the national average. Ultimately, we decided to use only shades of red,
+   because the point of our project was to show pandemic learning loss, and we thought that red naturally signified decreasing. </p>
 
     <%- include ('global/footer');  %>
 
