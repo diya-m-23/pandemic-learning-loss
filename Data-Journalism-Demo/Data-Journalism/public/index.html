@@ -156,7 +156,12 @@
       <h1>Average scores</h1>
     </header>
 <script>
-d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv', function(err, rows){
+d3.csv('/data/scores0.csv', function(err, rows){
+
+  console.log('err: ' + err);
+
+  console.log('rows: ' + rows);
+
       function unpack(rows, key) {
           return rows.map(function(row) { return row[key]; });
       }
@@ -165,14 +170,14 @@ d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_expo
       var data = [{
           type: 'choropleth',
           locationmode: 'USA-states',
-          locations: unpack(rows, 'code'),
-          z: unpack(rows, 'total exports'),
-          text: unpack(rows, 'state'),
-          zmin: 0,
-          zmax: 17000,
+          locations: unpack(rows, 'Code'),
+          z: unpack(rows, 'percent'),
+          text: unpack(rows, 'Jurisdiction'),
+          zmin:-5,
+          zmax: 0,
           colorscale: [
-              [0, 'rgb(255,0,0)'], [0.5, 'rgb(255,255,255)'],
-              [1, 'rgb(0,255,0)']
+              [0, 'rgb(255,0,0)'],
+              [1, 'rgb(255,255,255)']
           ],
           colorbar: {
               title: '% change',
