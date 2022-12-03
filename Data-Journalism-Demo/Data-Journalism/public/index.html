@@ -190,9 +190,6 @@
           
           <a class="dropdown-item" href="Wyoming.html">Wyoming</a>
         
-          
-          <a class="dropdown-item" href="undefined.html">undefined</a>
-        
       </div>
     </li>
   </ul>
@@ -200,14 +197,18 @@
 </nav>
 
     <header>
-  This is my awesome, dynamically inserted header! Data from <a href="https://www.nationsreportcard.gov/"> Nation's Report Card</a>
+  The COVID-19 Pandemic caused a nationwide drop in learning. 
 </header>
 
   </head>
 
   <body>
     <header>
-      <h1>Average scores</h1>
+      <br><h1>MACRO-SUMMARY</h1>
+      <p><h4>Description</h4>Our project aims to display pandemic learning loss visually on both a national and a state level. Our data compares
+        the average math scores of 8th graders in 2019 versus 2022, and we have found that the average scores have declined in almost
+        every single state. We hope to demonstrate insight into how the pandemic has affected learning for different demographics. </p>
+
     </header>
 <script>
 d3.csv('/data/scores.csv', function(err, rows){
@@ -258,402 +259,15 @@ d3.csv('/data/scores.csv', function(err, rows){
 });</script>
 
     <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
-    <section id="scores-table">
-      <table>
-        <tr>
-          <th>Jurisdiction</th>
-          <th>2019</th>
-          <th>2022</th>
-          <th>Percent change</th>
-        </tr>
-        
-        <tr>
-          <td><a href="National.html">National</a></td>
-          <td>282</td>
-          <td>274</td>
-          <td>-2.84</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Alabama.html">Alabama</a></td>
-          <td>269</td>
-          <td>264</td>
-          <td>-1.86</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Alaska.html">Alaska</a></td>
-          <td>274</td>
-          <td>270</td>
-          <td>-1.46</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Arizona.html">Arizona</a></td>
-          <td>280</td>
-          <td>271</td>
-          <td>-3.21</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Arkansas.html">Arkansas</a></td>
-          <td>274</td>
-          <td>267</td>
-          <td>-2.55</td>
-        </tr>
-        
-        <tr>
-          <td><a href="California.html">California</a></td>
-          <td>276</td>
-          <td>270</td>
-          <td>-2.17</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Colorado.html">Colorado</a></td>
-          <td>285</td>
-          <td>275</td>
-          <td>-3.51</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Connecticut.html">Connecticut</a></td>
-          <td>286</td>
-          <td>276</td>
-          <td>-3.50</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Delaware.html">Delaware</a></td>
-          <td>277</td>
-          <td>264</td>
-          <td>-4.69</td>
-        </tr>
-        
-        <tr>
-          <td><a href="District_of_Columbia.html">District of Columbia</a></td>
-          <td>269</td>
-          <td>260</td>
-          <td>-3.35</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Florida.html">Florida</a></td>
-          <td>279</td>
-          <td>271</td>
-          <td>-2.87</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Georgia.html">Georgia</a></td>
-          <td>279</td>
-          <td>271</td>
-          <td>-2.87</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Hawaii.html">Hawaii</a></td>
-          <td>275</td>
-          <td>270</td>
-          <td>-1.82</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Idaho.html">Idaho</a></td>
-          <td>286</td>
-          <td>282</td>
-          <td>-1.40</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Illinois.html">Illinois</a></td>
-          <td>283</td>
-          <td>275</td>
-          <td>-2.83</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Indiana.html">Indiana</a></td>
-          <td>286</td>
-          <td>279</td>
-          <td>-2.45</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Iowa.html">Iowa</a></td>
-          <td>282</td>
-          <td>277</td>
-          <td>-1.77</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Kansas.html">Kansas</a></td>
-          <td>282</td>
-          <td>272</td>
-          <td>-3.55</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Kentucky.html">Kentucky</a></td>
-          <td>278</td>
-          <td>269</td>
-          <td>-3.24</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Louisiana.html">Louisiana</a></td>
-          <td>272</td>
-          <td>266</td>
-          <td>-2.21</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Maine.html">Maine</a></td>
-          <td>282</td>
-          <td>273</td>
-          <td>-3.19</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Maryland.html">Maryland</a></td>
-          <td>280</td>
-          <td>269</td>
-          <td>-3.93</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Massachusetts.html">Massachusetts</a></td>
-          <td>294</td>
-          <td>284</td>
-          <td>-3.40</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Michigan.html">Michigan</a></td>
-          <td>280</td>
-          <td>273</td>
-          <td>-2.50</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Minnesota.html">Minnesota</a></td>
-          <td>291</td>
-          <td>280</td>
-          <td>-3.78</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Mississippi.html">Mississippi</a></td>
-          <td>274</td>
-          <td>266</td>
-          <td>-2.92</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Missouri.html">Missouri</a></td>
-          <td>281</td>
-          <td>272</td>
-          <td>-3.20</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Montana.html">Montana</a></td>
-          <td>284</td>
-          <td>277</td>
-          <td>-2.46</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Nebraska.html">Nebraska</a></td>
-          <td>285</td>
-          <td>279</td>
-          <td>-2.11</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Nevada.html">Nevada</a></td>
-          <td>274</td>
-          <td>269</td>
-          <td>-1.82</td>
-        </tr>
-        
-        <tr>
-          <td><a href="New_Hampshire.html">New Hampshire</a></td>
-          <td>287</td>
-          <td>279</td>
-          <td>-2.79</td>
-        </tr>
-        
-        <tr>
-          <td><a href="New_Jersey.html">New Jersey</a></td>
-          <td>292</td>
-          <td>281</td>
-          <td>-3.77</td>
-        </tr>
-        
-        <tr>
-          <td><a href="New_Mexico.html">New Mexico</a></td>
-          <td>269</td>
-          <td>259</td>
-          <td>-3.72</td>
-        </tr>
-        
-        <tr>
-          <td><a href="New_York.html">New York</a></td>
-          <td>280</td>
-          <td>274</td>
-          <td>-2.14</td>
-        </tr>
-        
-        <tr>
-          <td><a href="North_Carolina.html">North Carolina</a></td>
-          <td>284</td>
-          <td>274</td>
-          <td>-3.52</td>
-        </tr>
-        
-        <tr>
-          <td><a href="North_Dakota.html">North Dakota</a></td>
-          <td>286</td>
-          <td>278</td>
-          <td>-2.80</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Ohio.html">Ohio</a></td>
-          <td>286</td>
-          <td>276</td>
-          <td>-3.50</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Oklahoma.html">Oklahoma</a></td>
-          <td>276</td>
-          <td>264</td>
-          <td>-4.35</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Oregon.html">Oregon</a></td>
-          <td>280</td>
-          <td>270</td>
-          <td>-3.57</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Pennsylvania.html">Pennsylvania</a></td>
-          <td>285</td>
-          <td>274</td>
-          <td>-3.86</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Puerto_Rico.html">Puerto Rico</a></td>
-          <td>222</td>
-          <td>216</td>
-          <td>-2.70</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Rhode_Island.html">Rhode Island</a></td>
-          <td>276</td>
-          <td>270</td>
-          <td>-2.17</td>
-        </tr>
-        
-        <tr>
-          <td><a href="South_Carolina.html">South Carolina</a></td>
-          <td>276</td>
-          <td>269</td>
-          <td>-2.54</td>
-        </tr>
-        
-        <tr>
-          <td><a href="South_Dakota.html">South Dakota</a></td>
-          <td>287</td>
-          <td>281</td>
-          <td>-2.09</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Tennessee.html">Tennessee</a></td>
-          <td>280</td>
-          <td>272</td>
-          <td>-2.86</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Texas.html">Texas</a></td>
-          <td>280</td>
-          <td>273</td>
-          <td>-2.50</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Utah.html">Utah</a></td>
-          <td>285</td>
-          <td>282</td>
-          <td>-1.05</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Vermont.html">Vermont</a></td>
-          <td>287</td>
-          <td>276</td>
-          <td>-3.83</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Virginia.html">Virginia</a></td>
-          <td>287</td>
-          <td>279</td>
-          <td>-2.79</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Washington.html">Washington</a></td>
-          <td>286</td>
-          <td>276</td>
-          <td>-3.50</td>
-        </tr>
-        
-        <tr>
-          <td><a href="West_Virginia.html">West Virginia</a></td>
-          <td>272</td>
-          <td>260</td>
-          <td>-4.41</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Wisconsin.html">Wisconsin</a></td>
-          <td>289</td>
-          <td>281</td>
-          <td>-2.77</td>
-        </tr>
-        
-        <tr>
-          <td><a href="Wyoming.html">Wyoming</a></td>
-          <td>286</td>
-          <td>281</td>
-          <td>-1.75</td>
-        </tr>
-        
-        <tr>
-          <td><a href="undefined.html">undefined</a></td>
-          <td></td>
-          <td></td>
-          <td>NaN</td>
-        </tr>
-        
-      </table>
-    </section>
 
-    <br><h2>MACRO-SUMMARY</h2>
-    <p><h4>PROJECT DESCRIPTION</h4>Our project aims to display pandemic learning loss visually on both a national and a state level. Our data compares
-      the average math scores of 8th graders in 2019 versus 2022, and we have found that the average scores have declined in almost
-      every single state. We hope to demonstrate insight into how the pandemic has affected learning for different demographics. </p>
-   <p><h4>INSERT INFOGRAPHIC</h4></p>
-   <p>At least three bullet points listing interesting, text-based perspectives gleaned from the data that expand upon what is visible in the infographic. </p>
+
+  <br>
+   <p><h4>Takeaways</h4></p>
+   <p>As you can see, the pandemic negatively affected math scores in every single state. This indicates that:</p>
+   <p> 1) Zoom school was not as effective for teaching</p>
+   <p> 2) Online school is not a substitute for in-person learning, and should not be implemented as an alternative under normal circumstances</p>
+   <p> 3) Today's 8th graders are less adept at math compared to pre-COVID 8th graders, which could lead to lowered academic performance in high school</p>
+   <p><h4>Problems</h4></p>
    <p>The first potentially problematic aspect of our visualization is that the US map is not proportional (in terms of size) for every state.
    This is the same problem that election maps raise -- that the state sizes are unproportional, and from just looking at the map it seems like the Republican
    candidate has won by a landslide, when in fact a lot of Democratic states are smaller in size, but hold the same weight. We could have had proportional
@@ -661,10 +275,10 @@ d3.csv('/data/scores.csv', function(err, rows){
    <p>The second potentially problematic aspect of our visualization is that we weren't sure what colors to use on our map. We were debating whether to use only
    shades of red or whether to use two different colors fading into each other. In using different colors, we could make one color signify that the state's percent decrease
    was above the national average and the other color signify that the percent change was below the national average. Ultimately, we decided to use only shades of red,
-   because the point of our project was to show pandemic learning loss, and we thought that red naturally signified decreasing. </p>
+   because the point of our project was to show pandemic learning loss, and we thought that red naturally signified negative results. </p>
 
     <footer>
-  This is my awesome, dynamically inserted footer! Data from <a href="https://www.nationsreportcard.gov/"> Nation's Report Card</a>
+  Every US state's 8th grade math scores decreased from 2019 to 2022. Data from <a href="https://www.nationsreportcard.gov/"> Nation's Report Card</a>
 </footer>
 
 

@@ -9,7 +9,7 @@ let scores = scores_csv.split("\n");
 scores.forEach(function(score) {
   let state_info = score.split(',');
 
-  if(state_info[1]!=''){
+  if(state_info[0]!=''){
     let state_name = state_info[1];
 
     if(state_name!="Jurisdiction"){
