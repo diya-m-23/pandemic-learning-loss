@@ -17,7 +17,8 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <% for(state in data){ %>
-          <a class="dropdown-item" href="<%=state%>.html"><%= state %></a>
+          <% let stateName = state.split(" ").join("_"); %>
+          <a class="dropdown-item" href="<%=stateName%>.html"><%= state %></a>
         <%}%>
       </div>
     </li>
