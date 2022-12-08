@@ -8,6 +8,7 @@
   <meta name="description" content="A compendium of average math scores across the nation">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -212,9 +213,45 @@
     <li>Percent change: -1.75%</li>
   </ul>
   </section>
+  <section id="infographic">
+    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+
+    <script>
+
+    var trace1 = {
+  x: ['score in 2019', 'score in 2022'],
+  y: [286, 281],
+  name: 'Wyoming',
+  type: 'bar'
+};
+
+var trace2 = {
+  x: ['score in 2019', 'score in 2022'],
+  y: [282, 274],
+  name: 'National',
+  type: 'bar'
+};
+
+var data = [trace1, trace2];
+
+var layout = {title: 'state vs. national scores in 2019 and 2022', barmode: 'group'};
+
+Plotly.newPlot('myDiv', data, layout);
+
+</script>
+
+  </section>
   <section id="national-comparison">
     
       <p>This state's percent decrease is less than the national average decrease of 2.84%. </p>
+    
+    
+    
+
+    
+      <p>This state's current score is more than the national average score of 274. </p>
+    
+    
     
     
   </section>
